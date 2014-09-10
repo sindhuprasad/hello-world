@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 class HelloController () {
 	
   //@RequestMapping(method=Array(RequestMethod.GET))
-  @RequestMapping(value = Array("/greeting"), method = Array(RequestMethod.GET))
+  @RequestMapping(value = Array("/"), method = Array(RequestMethod.GET))
   @ResponseBody 
   def hello(@RequestParam(value= "name", required=false, defaultValue="World") name:String): Greeting = {
   	val g = new Greeting()
